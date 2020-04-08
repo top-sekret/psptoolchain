@@ -88,6 +88,6 @@ Next steps
 ==========
 
 Visit the following sites to learn more:
-
-http://www.ps2dev.org
-http://forums.ps2dev.org
+- https://en.wikibooks.org/wiki/PSP_Development
+- https://github.com/pspdev/pspsdk/tree/master/src/samples
+- http://psp.jim.sh/pspsdk-doc/
