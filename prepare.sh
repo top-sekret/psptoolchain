@@ -43,45 +43,6 @@ _EOF_
 				wget \
 				xz-utils \
 				zlib1g-dev
-		elif command -v apt-get >/dev/null
-		then
-			if [ "$(id -u)" -ne "0" ]
-			then
-				cat >&2 <<_EOF_
-Warning: running without superuser privileges
-THIS IS MOST LIKELY GOING TO FAIL.
-Run this script using sudo, su or pkexec.
-_EOF_
-			fi
-
-			set -e
-
-			echo 'Installing dependency packages using legacy APT...'
-			apt-get install \
-				autoconf \
-				automake \
-				automake1.9 \
-				bison \
-				build-essential \
-				bzip2 \
-				cmake \
-				doxygen \
-				flex \
-				gcc \
-				git \
-				gzip \
-				g++ \
-				libelf-dev \
-				libfreetype6-dev \
-				libncurses5-dev \
-				libreadline-dev \
-				libusb-dev \
-				libtool \
-				subversion \
-				tcl \
-				texinfo \
-				xz-utils \
-				zlib1g-dev
 		elif command -v dnf >/dev/null 2>&1
 		then
 			cat >&2 <<_EOF_
