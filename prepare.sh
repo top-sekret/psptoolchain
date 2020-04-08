@@ -40,6 +40,7 @@ _EOF_
 				subversion \
 				tcl \
 				texinfo \
+				unzip \
 				wget \
 				xz-utils \
 				zlib1g-dev
