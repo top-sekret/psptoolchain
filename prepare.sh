@@ -3,7 +3,7 @@
 case "$(uname -s)" in
 	Linux)
 
-		if command -v apt >/dev/null 2>&1
+		if command -v apt-get >/dev/null 2>&1
 		then
 			if [ "$(id -u)" -ne "0" ]
 			then
@@ -17,7 +17,7 @@ _EOF_
 			set -e
 
 			echo 'Installing dependency packages using APT...'
-			apt install \
+			apt-get install \
 				autoconf \
 				automake \
 				bison \
